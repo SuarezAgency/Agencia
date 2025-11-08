@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suarez Agency | Agencia de Marketing Digital</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c; /* Color de texto oscuro para legibilidad */
+        }
+        .header-bg {
+            background-color: #0b1f3d; /* Azul oscuro profesional */
+        }
+        .primary-color {
+            color: #10b981; /* Verde esmeralda para acentos */
+        }
+        .primary-bg {
+            background-color: #10b981;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 antialiased">
+
+    <!-- Encabezado Fijo y Navegación -->
+    <header class="header-bg sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Nombre de la Empresa (Estratégico 1) -->
+                <a href="#inicio" class="text-2xl font-extrabold tracking-tight primary-color">
+                    SUAREZ AGENCY
+                </a>
+                
+                <!-- Navegación Principal (solo para desktop) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#servicios" class="text-white hover:text-gray-300 transition duration-150">Servicios</a>
+                    <a href="#mision-vision" class="text-white hover:text-gray-300 transition duration-150">Nosotros</a>
+                    <a href="#calidad" class="text-white hover:text-gray-300 transition duration-150">Compromisos</a>
+                    <a href="#privacidad" class="text-white hover:text-gray-300 transition duration-150">Legal</a>
+                    <a href="#contacto" class="primary-bg text-gray-900 font-semibold py-1.5 px-4 rounded-lg hover:bg-emerald-400 transition duration-150 shadow-md">Contacto</a>
+                </nav>
+
+                <!-- Menú Móvil (Icono) -->
+                <button id="menu-button" class="md:hidden text-white p-2 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Móvil Desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full header-bg shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#servicios" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">Servicios</a>
+                <a href="#mision-vision" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">Nosotros</a>
+                <a href="#calidad" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">Compromisos</a>
+                <a href="#privacidad" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">Legal</a>
+                <a href="#contacto" class="block px-3 py-2 rounded-md text-base font-medium primary-bg text-gray-900 hover:bg-emerald-400 mt-2">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Hero / Inicio -->
+        <section id="inicio" class="header-bg text-white py-20 sm:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Nombre de la Empresa (Estratégico 2) -->
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight">
+                    El Impulso Digital que tu Marca Necesita con <span class="primary-color">SUAREZ AGENCY</span>
+                </h1>
+                <p class="text-xl sm:text-2xl mb-8 text-gray-300">
+                    Transformamos ideas en resultados medibles y crecimiento sostenido.
+                </p>
+                <a href="#servicios" class="primary-bg text-gray-900 font-bold py-3 px-8 rounded-xl text-lg hover:bg-emerald-400 transition duration-300 transform hover:scale-105 shadow-xl">
+                    Descubre Nuestros Servicios
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="primary-color font-semibold uppercase text-sm">Servicios de Élite</span>
+                    <h2 class="text-4xl font-bold mt-2 text-gray-900">Nuestra Oferta de Valor por SUAREZ AGENCY</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Servicio 1: Estrategia y Consultoría -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-emerald-500">
+                        <svg class="w-10 h-10 primary-color mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Estrategia Digital Integral</h3>
+                        <p class="text-gray-600">Desarrollamos planes de marketing personalizados basados en datos para alcanzar sus objetivos de negocio.</p>
+                    </div>
+
+                    <!-- Servicio 2: SEO y Contenido -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-emerald-500">
+                        <svg class="w-10 h-10 primary-color mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5m-5 5v-5"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Optimización en Buscadores (SEO)</h3>
+                        <p class="text-gray-600">Mejoramos el posicionamiento orgánico de su sitio web para generar tráfico de alta calidad y autoridad de marca.</p>
+                    </div>
+
+                    <!-- Servicio 3: Publicidad Digital (SEM/Paid Media) -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-emerald-500">
+                        <svg class="w-10 h-10 primary-color mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Campañas de Pago (SEM)</h3>
+                        <p class="text-gray-600">Creación y gestión de anuncios rentables en Google Ads, Meta Ads y otras plataformas clave.</p>
+                    </div>
+
+                    <!-- Servicio 4: Redes Sociales -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-emerald-500">
+                        <svg class="w-10 h-10 primary-color mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-5a2 2 0 00-2-2h-5a2 2 0 00-2 2v5a2 2 0 002 2zM9 20h5v-5a2 2 0 00-2-2h-5a2 2 0 00-2 2v5a2 2 0 002 2zM9 4h5v-3a2 2 0 00-2-2h-5a2 2 0 00-2 2v3a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Gestión de Redes Sociales</h3>
+                        <p class="text-gray-600">Construcción de comunidades, creación de contenido atractivo y gestión de la reputación en línea.</p>
+                    </div>
+
+                    <!-- Servicio 5: Diseño y Desarrollo Web -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-emerald-500">
+                        <svg class="w-10 h-10 primary-color mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Diseño UX/UI y Web</h3>
+                        <p class="text-gray-600">Diseñamos y desarrollamos sitios web optimizados, rápidos y enfocados en la experiencia del usuario (UX/UI).</p>
+                    </div>
+
+                    <!-- Servicio 6: Email Marketing y Automatización -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-emerald-500">
+                        <svg class="w-10 h-10 primary-color mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Automatización y CRM</h3>
+                        <p class="text-gray-600">Implementación de flujos de email marketing y automatización para nutrir leads y fidelizar clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Misión y Visión -->
+        <section id="mision-vision" class="py-16 sm:py-24 header-bg text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="primary-color font-semibold uppercase text-sm">Nuestro Propósito</span>
+                    <!-- Nombre de la Empresa (Estratégico 3) -->
+                    <h2 class="text-4xl font-bold mt-2">Valores y Fundamentos de SUAREZ AGENCY</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-16">
+                    <!-- Misión -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl text-gray-900">
+                        <h3 class="text-3xl font-bold primary-color mb-4 flex items-center">
+                            <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.201 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.799 18 7.5 18s3.332.477 4.5 1.247m0-13C13.168 5.477 14.799 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.201 18 16.5 18s-3.332.477-4.5 1.247"></path></svg>
+                            Misión
+                        </h3>
+                        <p class="text-lg">
+                            Proveer soluciones de marketing digital innovadoras y éticas que impulsen el crecimiento sostenible de nuestros clientes, maximizando su retorno de inversión a través de la transparencia y la excelencia operativa.
+                        </p>
+                    </div>
+
+                    <!-- Visión -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl text-gray-900">
+                        <h3 class="text-3xl font-bold primary-color mb-4 flex items-center">
+                            <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2m0 0a2 2 0 002 2h2a2 2 0 002-2v-2m0 0a2 2 0 012-2h2.945M5 15h2a2 2 0 012 2v2m0 0a2 2 0 012 2h2a2 2 0 012-2v-2"></path></svg>
+                            Visión
+                        </h3>
+                        <p class="text-lg">
+                            Ser la agencia de marketing digital líder en Colombia, reconocida por su impacto transformador en los negocios y por establecer el estándar de confianza y resultados en la industria digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Compromisos con la Calidad -->
+        <section id="calidad" class="py-16 sm:py-24 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="primary-color font-semibold uppercase text-sm">Nuestro Sello Distintivo</span>
+                    <h2 class="text-4xl font-bold mt-2 text-gray-900">Compromisos de Calidad de SUAREZ AGENCY</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Compromiso 1: Transparencia -->
+                    <div class="p-6 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                        <div class="primary-color text-3xl mb-3 font-bold">01.</div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-900">Reportes Claros</h3>
+                        <p class="text-gray-600">Garantizamos total transparencia en métricas e inversión publicitaria. Sabrá exactamente cómo se utiliza su presupuesto.</p>
+                    </div>
+
+                    <!-- Compromiso 2: Enfoque en Resultados -->
+                    <div class="p-6 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                        <div class="primary-color text-3xl mb-3 font-bold">02.</div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-900">Resultados Medibles</h3>
+                        <p class="text-gray-600">Nuestro enfoque se centra en KPIs que impactan su crecimiento, no solo en impresiones o clics superficiales.</p>
+                    </div>
+
+                    <!-- Compromiso 3: Innovación Continua -->
+                    <div class="p-6 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                        <div class="primary-color text-3xl mb-3 font-bold">03.</div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-900">Adaptación al Mercado</h3>
+                        <p class="text-gray-600">Compromiso constante con la formación y la implementación de las últimas tendencias tecnológicas y digitales.</p>
+                    </div>
+
+                    <!-- Compromiso 4: Ética Profesional -->
+                    <div class="p-6 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                        <div class="primary-color text-3xl mb-3 font-bold">04.</div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-900">Prácticas Éticas</h3>
+                        <p class="text-gray-600">Adherencia estricta a las mejores prácticas de la industria y a la legislación vigente colombiana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Política de Privacidad (Leyes Colombianas) -->
+        <section id="privacidad" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="primary-color font-semibold uppercase text-sm">Marco Legal</span>
+                    <h2 class="text-4xl font-bold mt-2 text-gray-900">Política de Tratamiento de Datos Personales</h2>
+                </div>
+
+                <div class="bg-gray-50 p-6 sm:p-10 rounded-xl shadow-inner text-gray-700">
+                    <p class="mb-6 font-medium">
+                        La presente política de **SUAREZ AGENCY** se rige bajo los principios establecidos en la **Ley Estatutaria 1581 de 2012** (Protección de Datos Personales) y el **Decreto 1377 de 2013** (Reglamentario) de la República de Colombia. Nuestro compromiso es garantizar la confidencialidad, seguridad y correcto tratamiento de los datos personales recolectados.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold primary-color mb-3">1. Identificación del Responsable del Tratamiento</h3>
+                    <p class="mb-4">
+                        **SUAREZ AGENCY**, con domicilio en Cra 132 #63-66, Medellín, es el responsable del tratamiento de sus datos personales.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold primary-color mb-3">2. Finalidad de la Recolección</h3>
+                    <ul class="list-disc list-inside ml-4 mb-4 space-y-1">
+                        <li>Envío de información comercial y promocional.</li>
+                        <li>Gestión administrativa y contractual con clientes y proveedores.</li>
+                        <li>Cumplimiento de requisitos legales y regulatorios.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold primary-color mb-3">3. Derechos del Titular de los Datos (Habeas Data)</h3>
+                    <p class="mb-4">
+                        De conformidad con la legislación colombiana, el titular de los datos tiene derecho a:
+                    </p>
+                    <ul class="list-disc list-inside ml-4 mb-6 space-y-1">
+                        <li>Conocer, actualizar y rectificar sus datos personales.</li>
+                        <li>Solicitar prueba de la autorización otorgada, salvo excepciones legales.</li>
+                        <li>Ser informado sobre el uso dado a sus datos.</li>
+                        <li>Presentar quejas ante la Superintendencia de Industria y Comercio (SIC).</li>
+                        <li>Revocar la autorización y/o solicitar la supresión del dato (cuando no exista deber legal o contractual de permanecer en la base de datos).</li>
+                    </ul>
+                    
+                    <p class="text-base italic font-medium">
+                        Para ejercer sus derechos, puede contactarnos a través de los canales proporcionados en la sección de Contacto.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer y Contacto -->
+    <footer id="contacto" class="header-bg text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
+            
+            <!-- Columna 1: Logo y Eslogan -->
+            <div class="md:col-span-2">
+                <h3 class="text-3xl font-extrabold primary-color mb-3">SUAREZ AGENCY</h3>
+                <p class="text-gray-300">Su socio estratégico en el universo digital.</p>
+                
+                <!-- Nombre de la Empresa (Estratégico 4) -->
+                <p class="mt-4 text-xs text-gray-400">© 2024 SUAREZ AGENCY. Todos los derechos reservados.</p>
+            </div>
+
+            <!-- Columna 2: Contacto (Estratégico 5) -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4 border-b border-emerald-500 pb-1">Contacto Directo</h4>
+                <div class="space-y-2">
+                    <p class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 primary-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span class="font-bold text-lg">3242268136</span>
+                    </p>
+                    <p class="flex items-center text-gray-300">
+                        <svg class="w-5 h-5 mr-2 primary-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        contacto@suarezagency.com (ejemplo)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Columna 3: Dirección -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4 border-b border-emerald-500 pb-1">Ubicación</h4>
+                <div class="space-y-2 text-gray-300">
+                    <p class="flex items-start">
+                        <svg class="w-5 h-5 mt-1 mr-2 primary-color flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        Cra 132 #63-66 <br>Medellín, Antioquia
+                    </p>
+                    <p class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 primary-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 100 4m-4 10v-4m4 4v-4m4 4v-4M7 4h10a2 2 0 012 2v12a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2z"></path></svg>
+                        Código Postal: 050036
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para el Menú Móvil -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Función para cerrar el menú móvil al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
